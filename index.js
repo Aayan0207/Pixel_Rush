@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
     return quotes[Math.floor(Math.random() * quotes.length)];
   }
+  function random_expert() {
+    quotes = [
+      "Sir Pussyboots",
+      "Pouncealot III",
+      "Furball",
+      "Whiskerton",
+      "Nya-chan",
+      "Meowistic",
+      "Purrfectionista",
+    ];
+    return quotes[Math.floor(Math.random() * quotes.length)];
+  }
   const home_button = document.querySelector("#home_button");
   const support_button = document.querySelector("#support_button");
   const contact_button = document.querySelector("#contact_button");
@@ -20,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const support_form = document.querySelector("#support_form");
   const text = document.querySelector("#problem");
   const answer = document.querySelector("#answer");
+  const expert_name = document.querySelector("#expert_name");
+  const expert_advice = document.querySelector("#expert_advice");
+  const expert = document.querySelector("#expert");
   home_button.onclick = () => {
     home.style.display = "block";
     support.style.display = "none";
@@ -38,10 +53,16 @@ document.addEventListener("DOMContentLoaded", function () {
   support_form.onsubmit = (event) => {
     event.preventDefault();
     setTimeout(() => {
-      answer.innerHTML = "Expert Opinion:\n" + random_quote() + ".";
+      answer.innerHTML = "Our reccomendation:\n" + random_quote() + ".";
     }, 100);
   };
   support_form.onreset = () => {
     answer.innerHTML = "";
   };
+  expert.onclick = () => {
+    setTimeout(() => {
+        expert_name.innerHTML = "Expert supporter:" + random_expert();
+      expert_advice.innerHTML = "Expert Opinion:\n" + random_quote() + ".";
+    }, 100);
+  }
 });
