@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const support = document.querySelector("#support");
   const contact = document.querySelector("#contact");
   const support_form = document.querySelector("#support_form");
-  const text = document.querySelector("#problem");
   const answer = document.querySelector("#answer");
   const expert_name = document.querySelector("#expert_name");
   const expert_advice = document.querySelector("#expert_advice");
