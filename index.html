@@ -7,13 +7,40 @@
   </head>
   <body align="center">
     <div id="navbar">
-      <button>Home</button> <button>Support</button><button>Contact</button>
+      <button id="home_button">Home</button>
+      <button id="support_button">Support</button
+      ><button id="contact_button">Contact</button>
     </div>
     <div id="home">
       <h1>Welcome to Purrfect IT Solutions</h1>
-      <h3>Your one stop shop for all IT solutions</h3>
+      <img src="./cat background.jpeg" id="image" />
+      <h3>Your purrfect companions for all your IT problems.</h3>
+      <div id="images">
+        <img src="./image.png" />
+        <img src="./download.jpeg" />
+        <img src="./download (1).jpeg" />
+        <img src="./download (2).jpeg" />
+      </div>
     </div>
-    <div id="support"><h1>Welcome to the support section.<h1><h3>Let us know about your problem down below.</h3></div>
-    <div id="contact"></div>
+    <div id="support">
+      <h1>Welcome to the support section.</h1>
+      <h3>Let us know about your problem down below. Meow~</h3>
+      <form id="support_form">
+        <textarea
+          id="problem"
+          placeholder="Mention about your problem"
+        ></textarea>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <p id="answer"></p>
+      </form>
+    </div>
+    <div id="contact">
+        <h1>Contact us</h1>
+        <p>Email: noreplay@purrfect.com</p>
+        <p>Landline: +91 284926178</p>
+        <p>Address: 156, Catatostrophe Complex</p>
+    </div>
   </body>
 </html>
