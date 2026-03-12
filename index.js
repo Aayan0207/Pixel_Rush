@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   support_form.onsubmit = (event) => {
     event.preventDefault();
     setTimeout(() => {
-      answer.innerHTML = "Our reccomendation:\n" + random_quote() + ".";
+      answer.innerHTML = "Our reccomendation:\n" + random_quote();
     }, 100);
   };
   support_form.onreset = () => {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   expert.onclick = () => {
     setTimeout(() => {
         expert_name.innerHTML = "Expert supporter:" + random_expert();
-      expert_advice.innerHTML = "Expert Opinion:\n" + random_quote() + ".";
+      expert_advice.innerHTML = "Expert Opinion:\n" + random_quote();
     }, 100);
   }
 });

@@ -1,23 +1,20 @@
-.aligned {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #support,
 #contact {
   display: none;
 }
 body {
   background-color: pink;
+  font-size: 20px;
+  cursor: url("./cursor.png");
 }
 #images {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:5px;
+  gap: 5px;
   background-color: #634a45;
   padding: 10px;
-    border: 5px solid #412722;
+  border: 5px solid #412722;
 }
 button {
   border: 5px solid #412722;
@@ -25,7 +22,6 @@ button {
   margin: 5px;
   height: 80px;
   width: 250px;
-  cursor: pointer;
   background-color: #ce8a97;
   font-size: 25px;
 }
@@ -35,11 +31,5 @@ textarea {
   border-radius: 5px;
   width: 700px;
   height: 400px;
-  font-size:20px;
-}
-#contact{
-    font-size:20px;
-}
-#answer{
-    font-size:20px;
+  font-size: 20px;
 }
