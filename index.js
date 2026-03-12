@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   support_form.onsubmit = (event) => {
     event.preventDefault();
     setTimeout(() => {
-      answer.innerHTML = "Our reccomendation:\n" + random_quote();
+      answer.innerHTML = "Our recommendation:\n" + random_quote();
     }, 100);
   };
   support_form.onreset = () => {
